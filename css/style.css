@@ -8,7 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
+/* prima sezione */
 .section-grey {
   background-color: #F3F5F9;
 }
@@ -37,7 +37,7 @@ a {
   color: #337ab7;
 }
 .brands {
-  width: 80%;
+  max-width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -57,6 +57,7 @@ a {
   padding-bottom: 30px;
 }
 
+/* seconda sezione */
 .deploy {
   padding: 40px 0;
   margin:auto;
@@ -101,4 +102,46 @@ a {
 .box--paragraph {
   color: #9EA7B0;
   font-size: 16px;
+}
+
+/* resposive */
+
+
+@media only screen and (max-width: 992px) {
+  .box__item {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .brands {
+    flex-wrap: wrap;
+  }
+  .brands__item {
+    flex-basis:50%;
+    padding: 0 10px;
+  }
+
+  .deploy {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .deploy__list, .deploy__boxes {
+    flex-basis: 100%;
+    margin: 0;
+
+  }
+
+  .deploy__boxes {
+    margin-top: 50px;
+    padding-left: 15px;
+  }
+  .box__item {
+    flex-basis: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+
+  }
 }

@@ -3,3 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.section-grey {
+  background-color: #F3F5F9;
+}
+.title {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.title--grey {
+  color: #9EA7B0;
+}
+
+.brands {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.brands__item {
+  flex-basis: calc((100% / 6) - 20px);
+}
+
+
+.brands__item img {
+  width: 100%;
+}
